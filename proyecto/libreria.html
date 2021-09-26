@@ -5,330 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Libreria Infinito</title>
-        <style>
-
-            *{
-                margin: 0px;
-                padding: 0px;
-                box-sizing: border-box;
-            }
-
-           body{
-               font-family:'open sans', sans-serif;
-               width: 100vw;
-               height: 100vh;
-               
-           }
-
-            header{
-                              
-                width: 100vw;
-                height: 9vh;
-                background: linear-gradient(180deg,rgba(236, 248, 60, 0.829)50% , rgb(54, 116, 42));
-                
-                
-                
-                
-               
-                
-                
-            }
-            
-            nav{
-                float: right;
-                width:80vw;
-            
-               
-                
-        }
-            #libros.text , .text , #cat a {
-                                            
-                
-               color: black;
-                font-family:'open sans', sans-serif;
-                font-weight:bold;
-                margin-right: 20px;
-                text-decoration:none !important;
-                list-style-type: none;
-                text-align: center;
-
-                
-             }                     
-            
-           
-           #inicio{
-               grid-column:1;
-               grid-row: 2;
-               align-self: center;
-            }
-            #carrito{
-                grid-column: 8;
-                grid-row: 2;
-                align-self: center;
-            }
-             #libros {
-                
-                grid-column: 2;
-                grid-row: 2;
-                align-self: center;
-                display: block;
-            }
-            #nosotros{
-                grid-column: 3;
-                grid-row: 2;
-                align-self: center;
-            }
-            #contacto{
-                grid-column: 4;
-                grid-row: 2;
-                align-self: center;
-            }
-            main {
-                
-                height: 50vh;
-                width: 100%;
-                display: grid;
-                grid-template-columns: 1fr 3fr 2fr  1fr;
-                grid-template-rows: 5fr 8fr 3fr  ;
-                color:#fff;
-                background-image: url("background.jpg");
-                background-repeat: no-repeat;
-                background-size:cover;
-                background-position: center;
-                box-shadow: 0 0 25px 0 black;
-                
-               
-                           
-            }
-            
-          main > div {
-                grid-row: 2;
-                grid-column: 2 / span 1;
-            }
-            
-            main a{
-                color:#fff;
-            }
-            
-            main > h1 ,main h1 {
-                 font-size: 2rem !important;
-                 text-shadow: 4px 4px 4px black;
-            }
-            #categorias{
-               margin-left: 5rem;
-               margin-top: 3rem;
-
-            }
-            #container{
-                height: 9vh;
-                width: 80vw;
-               display: grid;
-               grid-template-columns:  repeat(4, 1fr) 1.5fr 2rem 1fr;
-               grid-template-rows: 1.5rem 2rem 1.5rem;
-               
-               
-                
-               height: 5rem;
-               position:relative ;
-                
-            }
-           
-            ul#libros.text > li {
-                              
-                max-height: 0px;
-                position: absolute;
-                overflow: hidden;
-                
-                
-                
-            }
-            
-            
-            ul#libros:hover #cat {
-                
-                     
-                overflow: visible;
-                position: absolute;
-                max-height: 800px;
-                background-color: rgba(189, 163, 115, 0.76);
-                padding: 8px 8px;
-                border-color: 2px  black ;
-                opacity: 0.9;
-            }
-            
-            #search-bar{
-                
-                width: 14rem;
-                padding: 6px;
-                grid-column: 5 ;
-                grid-row: 2;
-
-               justify-self: flex-end;
-            }
-            .btn-srch{
-                
-                width: 2rem;
-                height: 2rem;
-                grid-column:6 ;
-                grid-row: 2;
-                
-                align-self: center;
-                
-            }
-            section{
-                width: 100%;
-                height: 30rem;
-            }
-            
-       h1.titulos  {
-           
-           text-align: center;
-           text-shadow: 1px 1px 2px #4e4e4e81;
-            
-             
-         }  
-         section h1{
-             padding-top: 2rem ;
-             margin-bottom: 1rem;
-         }    
-       
-        
-
-
-
-        
-         #new {
-            
-            
-           
-            height: 80vh;
-            padding: 5vh 20vw 5vh;
-        
-            
-            background-color: #e4e4e4;
-            display: grid;
-            grid-template-rows: .5fr 1fr .5fr ;
-            
-            width: 100vw;
-    
-            justify-content: center;
-            align-items: center;
-           
-       
-        }
-
-  
-        
-       .pad-style , #books-most.pad-style{
-        padding: 2.2rem ;
-        background-color: rgb(245, 159, 48);
-       
-        margin-bottom: 1rem;
-        margin-right: 1rem;
-
-       }
-       .pad-style:hover{
-           transition: .2s;
-        box-shadow: 5px 10px 5px 5px rgba(110, 110, 110, 0.438);
-       }
-        #title-new{
-            padding: 5vh 0vw 10vh;
-            grid-row: 1;
-            grid-column: 1 / span 4;
-        }
-        #img-book-1{
-            
-            grid-column: 1;
-            grid-row: 2;
-            
-        }
-    
-        #img-book-2{
-            grid-column:2 ;
-            grid-row: 2;
-            
-        }
-       
-
-        #img-book-3{
-            grid-column:3 ;
-            grid-row: 2;
-            
-        }
-        
-        #img-book-4{
-            grid-column:4 ;
-            grid-row: 2;
-            padding: 2.3rem 2rem !important;
-            
-        }
-       
-        #titulo{
-            grid-row: 1;
-            grid-column: 1 / span 4;
-        }
-       
-        
-        #books-most{
-            
-            background-color: #f4f8f7;
-           
-            
-            
-            width: 100%;
-            height: 60vh;
-            padding: 5vh 20vw;
-            
-            
-           
-            display: grid;
-            grid-template-rows: .5fr 1fr .5fr ;
-            
-            width: 100%;
-    
-            justify-content: center;
-            align-items: center;
-           
-       
-        }
-       #title-most{
-            padding: 1vh 0vh;
-            grid-row: 1;
-            grid-column: 1 / span 4;
-        }
-        #books-most#img-book-1{
-            
-            grid-column: 1;
-            grid-row: 2;
-            
-        }
-    
-        #books-most#img-book-2{
-            grid-column:2 ;
-            grid-row: 2;
-            
-        }
-       
-
-        #books-most#img-book-3{
-            grid-column:3 ;
-            grid-row: 2;
-            
-        }
-        
-        #books-most#img-book-4{
-            grid-column:4 ;
-            grid-row: 2;
-            
-        }
-       
-        #books-most#titulo{
-            grid-row: 1;
-            grid-column: 1 / span 4;
-        }
-        
-      
-        </style>
+        <link rel="stylesheet" href="css/styles.css">
 
 
     </head>
@@ -336,26 +13,27 @@
     <body>
        
         <header>
-            <nav class="text" >
+            <nav  >
                <div id="container">
-                <a id="inicio" class="text" href="">Inicio</a>
-                
-                    <ul id="libros" class="text" href="">Libros 
-                        <li id="cat"> <a id="historia"  href="">Historia</a> </li>
-                        <li id="cat"> <a id="ciencia"   href="">Ciencias</a></li>
-                        <li id="cat"> <a id="musica"   href="">Musica</a></li>
-                        <li id="cat"> <a id="infantiles"   href="">Infantiles</a></li>
-                        <li id="cat"> <a id="arte"   href="">Arte</a></li>
-                        <li id="cat"> <a id="manga"  href="">Manga</a></li>
-                    </ul>
-                <a id="nosotros" class="text" href="">Nosotros</a>
-                <a id="contacto"  class="text"  href="">Contacto</a>
-                <a id="carrito" class="text"  href="">Carrito</a>
+                    <a id="inicio"  href="">Inicio</a>
+                    
+                        <ul id="libros" href="">Libros 
+                            <li> <a id="historia"  href="">Historia</a> </li>
+                            <li> <a id="ciencia"   href="">Ciencias</a></li>
+                            <li> <a id="musica"   href="">Musica</a></li>
+                            <li> <a id="infantiles"   href="">Infantiles</a></li>
+                            <li> <a id="arte"   href="">Arte</a></li>
+                            <li> <a id="manga"  href="">Manga</a></li>
+                        </ul>
+                    <a id="nosotros" href="">Nosotros</a>
+                    <a id="contacto" href="">Contacto</a>
+                    <a id="carrito" href="">Carrito</a>
 
-                <input type="text" placeholder="Buscar.."name="" id="search-bar">
-                <button class="btn-srch"type="submit"></button>
+                    <input type="text" placeholder="Buscar.."name="" id="search-bar">
+                    <button class="btn-srch"type="submit"></button>
+                </div>
             </nav>
-        </div>
+        
         </header>
 
         <main>
@@ -367,70 +45,167 @@
 
         </main>
 
-        <section id="new" class="text" >
-                    <h1 id="title-new"class="titulos">Novedades</h1>
+        <section id="new"  >
+                    <h1 >Novedades</h1>
 
-               
-               
-                    <img id="img-book-1" class="pad-style"src="./miniaturas/libro1.jpg" alt="">
-                    <span id="title-book-1"> libro 1 </span>
-                
-                
-                    <img id="img-book-2" class="pad-style"src="./miniaturas/libro2.jpg" alt="" >
-                    <span id="title-book-2"> libro 2 </span>
-                
-                    
-            
-                    <img id="img-book-3" class="pad-style" src="./miniaturas/libro3.jpg" alt="">
-                    <span id="title-book-3"> libro 3 </span>
-                
-                
-                    <img id="img-book-4" class="pad-style"src="./miniaturas/libro4.jpg" alt="">
-                    <span id="title-book-4"> libro 4 </span>
+                    <div id="books-holder-new" >
 
+                        <!-- <div id="book-1">
+                            <img class="pad-style"  src="./miniaturas/libro1.jpg" alt="">
+                            <br>
+                            <span class="titulo"> libro 1 </span>
+                        </div>
+                     
+                        <div id="book-2">
+                            <img class="pad-style" src="./miniaturas/libro2.jpg" alt="" >
+                            <br>
+                            <span class="titulo"> libro 2 </span>
+                        </div>
+                        
+                        <div id="book-3">
+                            <img class="pad-style"  src="./miniaturas/libro3.jpg" alt="">
+                            <br>
+                            <span class="titulo"> libro 3 </span>
+                        </div>
+
+                        <div id="book-4">
+                            <img class="pad-style" src="./miniaturas/libro4.jpg" alt="">
+                            <br>
+                            <span class="titulo"> libro 4 </span>
+                        </div>
+                        <div id="book-5">
+                            <img  class="pad-style" src="./miniaturas/libro3.jpg" alt="">
+                            <br>
+                            <span class="titulo"> libro 3 </span>
+                        </div>-->
+                    </div>  
               
 
             
         </section>
 
-        <section id="books-most" class="text">
+        <section id="books-most">
              
                 <h1 id="title-most"class="titulos">Books Most Selled</h1>
 
-               
-               
-                    <img id="img-book-1" class="pad-style" src="./miniaturas/libro4.jpg" alt="">
-                    <span id="title-book-1"> libro 4 </span>
-                
-                
-                    <img id="img-book-2" class="pad-style" src="./miniaturas/libro5.jpg" alt="" >
-                    <span id="title-book-2"> libro 5 </span>
-                
-                    
-            
-                    <img id="img-book-3" class="pad-style" src="./libro6.jpg" alt="">
-                    <span id="title-book-3"> libro 6 </span>
-                
-                
-                    <img id="img-book-4" class="pad-style" src="./miniaturas/libro7.jpg" alt="">
-                    <span id="title-book-4"> libro 7 </span>
+                <div id="books-holder-most" >
+                    <!-- <div id="book-1">
+                        <img class="pad-style"  src="./miniaturas/libro4.jpg" alt="">
+                        <br>
+                        <span class="titulo"> libro 4 </span>
+                    </div>
+                   
+                    <div id="book-2">
+                        <img  class="pad-style" src="./miniaturas/libro5.jpg" alt="" >
+                        <br>
+                        <span class="titulo"> libro 5 </span>
+                    </div>
+                   
 
+                    <div id="book-3">
+                        <img class="pad-style" src="./libro6.jpg" alt="">
+                        <br>
+                        <span class="titulo" > libro 6 </span>
+                    </div>
+
+                    <div id="book-4">
+                        <img class="pad-style" src="./miniaturas/libro7.jpg" alt="">
+                        <br>
+                        <span class="titulo" > libro 7 </span>
+                    </div> -->
+                </div>
+        </section>
+
+        <section id="books-recommended" class="text"> 
+
+            <h1 class="titulos">Recommended</h1>
+            
+            <div id="books-holder-recommended">
+
+                <!-- <div  id="book-1" >
+                    <img  class="pad-style" src="./miniaturas/libro4.jpg" alt="">
+                    <br>
+                    <span class="titulo" > libro 4 </span>
+                </div>
+               
+                <div id="book-2">
+                    <img  class="pad-style" src="./miniaturas/libro5.jpg" alt="" >
+                    <br>
+                    <span class="titulo"> libro 5 </span>
+                </div>
+               
+
+                <div id="book-3" >
+                    <img  class="pad-style" src="./libro6.jpg" alt="">
+                    <br>
+                    <span class="titulo"> libro 6 </span>
+                </div>
+
+                <div id="book-4" >
+                    <img class="pad-style" src="./miniaturas/libro7.jpg" alt="">
+                    <br>
+                    <span class="titulo"> libro 7 </span>
+                </div> -->
             </div>
         </section>
 
-        <section id="recommended" class="text"> <h1 class="titulos">Recommended</h1>
-            <div>libro 1</div>
-            <div>libro 2</div>
-            <div>libro 3</div>
-            <div>libro 4</div>
-        </section>
 
-
+<script src="C:\Users\tuma\Documents\GitHub\proyecto\js\libros.js"></script>
 
 <script>
 
+const librosHolderNew = document.getElementById('books-holder-new');
+const librosHolderMost = document.getElementById('books-holder-most')
+const librosHolderRecommended = document.getElementById('books-holder-recommended')
 
-    
+librosHolderNew.innerHTML="";
+librosHolderMost.innerHTML="";
+librosHolderRecommended.innerHTML="";
+
+
+
+
+  // id, titulo, descripcion, categoria, precio, stock
+let libros =[
+    new Libro(1, 'El Último Golpe Tupamaro','lorem ipsum','Historia Nacional',690,10,'newBook'),
+    new Libro(2, 'El Arte de Engañar al Karma','lorem ipsum','Auto-ayuda',650,10,'mostSelledBook'),
+    new Libro(3, 'Historias de Sicarios en Uruguay','lorem ipsum','Historia Nacional',800,20,'newBook'),
+    new Libro(4, 'Siete Maridos de Evelyn Hugo','lorem ipsum','Drama',690,10,'mostSelledBook'),
+    new Libro(5, 'Una Familia Anormal. Y el cruce de los universos','lorem ipsum','Juvenil/infantil',700,15,'recommendedBook'),
+    new Libro(6, 'Carta de Palleja','lorem ipsum','Gastronomia',750,8,'mostSelledBook'),
+    new Libro(7,'La Pasteleria Sin Secretos','lorem ipsum','Reposteria',900,8,'mostSelledBook'),
+    new Libro(8,'El liberalismo Conservador','lorem ipsum','Historia Nacional',850,14,'mostSelledBook'),
+    new Libro(9,'De Ninguna Parte','lorem ipsum','Narrativa',790,8,'mostSelledBook'),
+    new Libro(10,'Pack Harry Potter (Serie completa)','La colección completa de los libros de Harry Potter'+ 'la saga más mágica de todos los tiempos.','Fantasía',3890,5,'recommendedBook'),
+    new Libro(11,'Tabaré Vázquez. Misterios de un liderazgo que cambió la historia','La reedición actualizada de un libro fundamental para conocer la historia de uno de los líderes'+'políticos más importantes de las últimas décadas.','Biografia',690,10,'recommendedBook'),
+    new Libro(12,'Adolescencia y marihuana. Pistas para padres y educadores','¿Qué pasa cuando los adolescentes consumen marihuana?','Ensayo',690,8,'recommendedBook'),
+    new Libro(13,'La Medicina de los Animales de la Cruz del Sur','Un oráculo para orientar tus decisiones. Un libro para elevar tu conciencia'+'64 animales para poder hallar tu sendero en la Tierra.','Oraculo',1850,4,'newBook'),
+    new Libro(14,'El Italiano','La Nueva Novela de Arturo Pérez-Reverte','Novela',890,12,'newBook'),
+    new Libro(15,'Almendra','Una novela breve y lacerante en la que solo la empatía puede llevar a la esperanza.','Novela',650,8,'newBook'),
+
+] 
+
+
+  
+  
+
+     let librosNew= libros.filter(Libro => Libro.seccion =='newBook' )
+            librosNew.forEach(librosNew => {
+                librosHolderNew.innerHTML += librosNew.asInnerHTMLForBooks()}) 
+            
+        
+       
+         
+    let librosMost= libros.filter(Libro => Libro.seccion =='mostSelledBook')
+            librosMost.forEach(librosMost => {
+                librosHolderMost.innerHTML += librosMost.asInnerHTMLForBooks()})
+
+
+    let librosRecommended= libros.filter(Libro => Libro.seccion=='recommendedBook')
+            librosRecommended.forEach(librosRecommended => {
+                librosHolderRecommended.innerHTML += librosRecommended.asInnerHTMLForBooks()}) 
+
+
 </script>
 
     </body>
