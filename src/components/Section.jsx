@@ -1,5 +1,7 @@
 import react from "react"
 import {RenderBook} from "./Books/RenderBook"
+import{RenderBookMost} from "./Books/RenderBookMost"
+import{RenderBookRecommended} from "./Books/RenderBookRecommended"
 import { useState,useEffect } from "react";
 
 
@@ -19,7 +21,7 @@ const Section= () =>{
                             })
         .catch(error => console.log("error") )
         console.log(Libros)
-    })
+    },[])
     
        
 
@@ -41,7 +43,9 @@ return(
         <h1 id="title-most" class="titulos">Libros mas vendidos</h1>
 
         <div id="books-holder-most">
-            
+        <RenderBookMost
+      Libros={Libros}
+    />
         </div>
 
     </section><section id="books-recommended" class="text">
@@ -50,7 +54,9 @@ return(
         
         <div id="books-holder-recommended">
 
-
+        <RenderBookRecommended
+      Libros={Libros}
+            />
         </div>
     </section></>
 

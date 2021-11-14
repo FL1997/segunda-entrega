@@ -1,18 +1,19 @@
 import react, { useEffect, useState } from "react";
 import Libro from "../Main/Books";
-import {libro} from "../Section";
 
 
 
-export const RenderBook = (props) => {
+export const RenderBookRecommended = (props) => {
 
-    const [Book,setBook] = useState([])
+        const [Book,setBook] = useState([]);
 
 
         return (  
         <>
            
-        { props.Libros.filter(value => value.seccion==='newBook').map((libro,index)=> {
+     
+             
+        { props.Libros.filter(value => value.seccion==='recommendedBook').map((libro,index)=> {
                
                return(
                 <div id={libro.id} >
@@ -21,7 +22,7 @@ export const RenderBook = (props) => {
                         <a  ><span class="titulo">{libro.titulo} </span></a>
                         <br/>
                         <span className="Precio"  >$ {libro.precio}</span>
-                        
+                        <br />
                         <button id="detalle" type= "button" onClick={() => {
                                         Book.push(libro
                                         
@@ -39,8 +40,6 @@ export const RenderBook = (props) => {
                                 <br />
                     </div>
         
-                   
-        
            
                     )
                }
@@ -48,8 +47,6 @@ export const RenderBook = (props) => {
           )
           
           }
-             
-        
        </>
         
 
@@ -61,35 +58,4 @@ export const RenderBook = (props) => {
     
  } 
  
-
-
-
-
-//  <div id="books-holder-most">
-//         { Libros.filter(value => value.seccion==='mostSelledBook').map((libro,index)=> {
-               
-//                return(
-//                 <div id={libro.id} >
-//                         <img  className="pad-style" src= {libro.img} alt=""/>
-//                         <br/>
-//                         <a  ><span class="titulo">{libro.titulo} </span></a>
-//                         <br/>
-//                         <span className="Precio"  >$ {libro.precio}</span>
-            
-//                     </div>
-        
-           
-//                     )
-//                   }
-
-//           )
-//           }
-//         </div>
-
-        
-
-
-
-
-
-export default RenderBook
+ export default RenderBookRecommended

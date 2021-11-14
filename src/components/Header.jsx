@@ -16,26 +16,17 @@ const Header = (props) =>
 
       <img id="logo" src={logo} alt=""></img>
     
-        <ul>
-                  <li><a id="inicio"  href="">Inicio</a> </li>
-                  <li ><a id="libros"href="#">Libros</a></li>  
-                    <div className="drop">
-                          <ul>
-                              <li> <a id="historia"  href="">Historia</a> </li>
-                              <li> <a id="ciencia"   href="">Ciencias</a></li>
-                              <li> <a id="musica"   href="">Musica</a></li>
-                              <li> <a id="infantiles"   href="">Infantiles</a></li>
-                              <li> <a id="arte"   href="">Arte</a></li>
-                              <li> <a id="manga"  href="">Manga</a></li>
-                              
-                        </ul>
-                        </div>
-                    
-                  <li><a id="nosotros" href="">Nosotros</a></li>
-                  <li><a id="contacto" href="">Contacto</a></li>
-                  <li><a id="carrito" href="">Carrito</a></li> 
-                
-            </ul>      
+       
+      <a id="inicio"  href="">Inicio</a> 
+                        
+                      
+                        <a id="libros"href="libro1.html">Libros </a>
+                          
+                 
+                  
+                <a id="nosotros" href="">Nosotros</a>
+                <a id="contacto" href="">Contacto</a>
+                <a id="carrito" href="">Carrito</a>
              
                       
           <input type="text" placeholder="Buscar.."name="" id="search-bar"></input>

@@ -46,10 +46,7 @@ nav{
   width:90vw;
   height: 9vh;
   }
-#container li {
-  list-style-type:unset;
-  
-}
+
 
 #inicio,#libros,#nosotros,#contacto,#carrito, ul li >a{
 
@@ -61,25 +58,7 @@ nav{
   list-style-type: none;
   text-align: center;
 
-} 
-
-nav ul a{
-  display: block;
-  flex-direction: row;
-}
-
-.drop{
-  position: absolute;
-    display: none;
-}
-
-.drop ul li{
-  display: block;
-  width:100%;
-}
-nav ul li:hover .drop{
-  display: block;
-}
+}                  
 a{
    color: black;
 }   
@@ -96,13 +75,13 @@ a{
 }
 
 
-li#inicio{
+#inicio{
  grid-column:2;
  grid-row: 2;
  align-self: center;
 }
 
-li#libros {
+#libros {
 
   grid-column: 3;
   grid-row: 2;
@@ -110,19 +89,19 @@ li#libros {
   display: block;
   
 }
-li#nosotros{
+#nosotros{
   grid-column: 4;
   grid-row: 2;
   align-self: center;
   }
 
-li#contacto{
+#contacto{
   grid-column: 5;
   grid-row: 2;
   align-self: center;
   }
 
-li#search-bar{
+#search-bar{
 
    width: 14rem;
    height: 2rem;
@@ -148,7 +127,7 @@ li#search-bar{
 
   }
 
-li#carrito{
+#carrito{
   grid-column: 9;
   grid-row: 2;
   align-self: center;
@@ -192,15 +171,10 @@ main  div >h1  {
 #container{
   height: 9vh;
   width: 80vw;
-  display: flex;
-  flex:4;
-  /* grid-template-columns: 2fr repeat(4, 1fr)  1.5fr 2fr 2rem .8fr;
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr)  1.5fr 2fr 2rem .8fr;
   grid-template-rows: 1.5rem 2rem 1.5rem;
-  position:relative ; */
-
-}
-img  #logo{
-  background:unset !important;
+  position:relative ;
 
 }
 
@@ -224,6 +198,7 @@ ul#libros:hover #cat {
   border-color: 2px  black ;
   opacity: 0.9;
 }
+
 
 
   section{
@@ -374,7 +349,9 @@ a {
               height: 7vh;
 
               background-size: contain;}
-
+            header #logo{
+              margin-right: 2vw;
+            }
               
 
               nav{
@@ -540,7 +517,7 @@ a {
           margin: 0px;;
               
       }
-      #logo{
+     header #logo{
         height: 3vh;
         margin: .3rem 1.5rem;
         align-self: baseline;
