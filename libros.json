@@ -1,0 +1,179 @@
+{"libros":[
+    
+    {
+        
+        "id":1,
+        "titulo":"El Último Golpe Tupamaro",
+        "descripcion":"lorem ipsum",
+        "categoria":"Historia Nacional",
+        "precio":690,
+        "stock":10,
+        "seccion":"newBook",
+        "img":"/img/libro1.jpg"
+
+
+
+    },
+    {
+        "id":2,
+        "titulo":"El Arte de Engañar al Karma",
+        "descripcion":"lorem ipsum",
+        "categoria":"Auto-ayuda",
+        "precio":650,
+        "stock":10,
+        "seccion":"mostSelledBook" ,
+        "img":"/img/libro2.jpg"
+    },
+    {
+        "id":3,
+        "titulo":"Historias de Sicarios en Uruguay",
+        "descripcion":"lorem ipsum",
+        "categoria":"Historia Nacional",
+        "precio":800,
+        "stock":20,
+        "seccion":"newBook" ,
+        "img":"/img/libro3.jpg"
+    },
+
+    {
+        "id":4,
+        "titulo":"Siete Maridos de Evelyn Hugo",
+        "descripcion":"lorem ipsum",
+        "categoria":"Drama",
+        "precio":690,
+        "stock":10,
+        "seccion":"mostSelledBook" ,
+        "img":"/img/libro4.jpg"
+    },
+    
+    {
+        "id":5,
+        "titulo":"Una Familia Anormal. Y el cruce de los universos",
+        "descripcion":"lorem ipsum",
+        "categoria":"juvenil/infantil",
+        "precio":700,
+        "stock":15,
+        "seccion":"recommendedBook" ,
+        "img":"/img/libro5.jpg"
+    },
+
+    {
+        "id":6,
+        "titulo":"Carta de Palleja",
+        "descripcion":"lorem ipsum",
+        "categoria":"Gastronomia",
+        "precio":750,
+        "stock":8,
+        "seccion":"mostSelledBook" ,
+        "img":"/img/libro6.jpg"
+    },
+
+    {
+        "id":7,
+        "titulo":"La Pasteleria Sin Secretos",
+        "descripcion":"lorem ipsum",
+        "categoria":"Reposteria",
+        "precio":900,
+        "stock":8,
+        "seccion":"mostSelledBook" ,
+        "img":"/img/libro7.jpg"
+    },
+    
+    {
+        "id":8,
+        "titulo":"El liberalismo Conservador",
+        "descripcion":"lorem ipsum",
+        "categoria":"Historia Nacional",
+        "precio":850,
+        "stock":14,
+        "seccion":"mostSelledBook" ,
+        "img":"/img/libro8.jpg"
+    },
+    {
+        "id":9,
+        "titulo":"De Ninguna Parte",
+        "descripcion":"lorem ipsum",
+        "categoria":"Narrativa",
+        "precio":790,
+        "stock":8,
+        "seccion":"mostSelledBook" ,
+        "img":"/img/libro9.jpg"
+    },
+    {
+        "id":10,
+        "titulo":"Pack Harry Potter (Serie completa)",
+        "descripcion":"La colección completa de los libros de Harry Potter\n la saga más mágica de todos los tiempos.",
+        "categoria":"Fantasía",
+        "precio":3890,
+        "stock":5,
+        "seccion":"recommendedBook" ,
+        "img":"/img/libro10.jpg"
+    },
+    {
+        "id":11,
+        "titulo":"Tabaré Vázquez. Misterios de un liderazgo que cambió la historia",
+        "descripcion":"La reedición actualizada de un libro fundamental para conocer la historia de uno de los líderes\n políticos más importantes de las últimas décadas.",
+        "categoria":"Biografia",
+        "precio":690,
+        "stock":10,
+        "seccion":"recommendedBook",
+        "img":"/img/libro11.jpg"
+        
+    },
+    {
+        "id":12,
+        "titulo":"Adolescencia y marihuana. Pistas para padres y educadores",
+        "descripcion":"¿Qué pasa cuando los adolescentes consumen marihuana?",
+        "categoria":"Ensayo",
+        "precio":690,
+        "stock":8,
+        "seccion":"recommendedBook" ,
+        "img":"/img/libro12.jpg"
+    },
+
+    {
+        "id":13,
+        "titulo":"La Medicina de los Animales de la Cruz del Sur",
+        "descripcion":"Un oráculo para orientar tus decisiones. Un libro para elevar tu conciencia\n 64 animales para poder hallar tu sendero en la Tierra.",
+        "categoria":"Oraculo",
+        "precio":1850,
+        "stock":4,
+        "seccion":"newBook" ,
+        "img":"/img/libro13.jpg"
+    },
+    {
+        "id":14,
+        "titulo":"El Italiano",
+        "descripcion":"La Nueva Novela de Arturo Pérez-Reverte",
+        "categoria":"Novela",
+        "precio":890,
+        "stock":12,
+        "seccion":"newBook" ,
+        "img":"/img/libro14.jpg"
+    },
+    {
+        "id":15,
+        "titulo":"Almendra",
+        "descripcion":"Una novela breve y lacerante en la que solo la empatía puede llevar a la esperanza.",
+        "categoria":"Novela",
+        "precio":650,
+        "stock":8,
+        "seccion":"newBook" ,
+        "img":"/img/libro15.jpg"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+]} 
+
+            
+        
