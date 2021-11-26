@@ -1,16 +1,17 @@
 import react, { useEffect, useState } from "react";
 import Libro from "../Main/Books";
 import {libro} from "../Section";
-
+import BookSelected from "../BookSelected";
+import { Link } from "react-router-dom";
+import  LibroNew  from "../../App";
 
 
 export const RenderBook = (props) => {
-
+  
     const [Book,setBook] = useState([])
-
-
-        return (  
-        <>
+       let libro=[];
+        
+        return (          <>
            
         { props.Libros.filter(value => value.seccion==='newBook').map((libro,index)=> {
                
@@ -27,16 +28,19 @@ export const RenderBook = (props) => {
                                         
                                         
                                         )
-                                        
 
-                                        console.log(libro)
+                                       
+                                      console.log(libro)
+                                        
+                                        
                                         
                                   
-                                        
+                                    
                                 
 
-                                }} > DETALLES</button> 
+                                }  } > DETALLES</button> 
                                 <br />
+                                     
                     </div>
         
                    
@@ -48,6 +52,7 @@ export const RenderBook = (props) => {
           )
           
           }
+           
              
         
        </>
@@ -60,10 +65,9 @@ export const RenderBook = (props) => {
        
     
  } 
+
+
  
-
-
-
 
 //  <div id="books-holder-most">
 //         { Libros.filter(value => value.seccion==='mostSelledBook').map((libro,index)=> {
@@ -92,4 +96,5 @@ export const RenderBook = (props) => {
 
 
 
-export default RenderBook
+export default RenderBook;
+

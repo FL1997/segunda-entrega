@@ -3,12 +3,13 @@ import {RenderBook} from "./Books/RenderBook"
 import{RenderBookMost} from "./Books/RenderBookMost"
 import{RenderBookRecommended} from "./Books/RenderBookRecommended"
 import { useState,useEffect } from "react";
+import BookSelected from "./BookSelected";
 
 
 const Section= () =>{
 
     const [Libros, setLibros] = useState([]);
-
+   
    
        
 
@@ -34,11 +35,14 @@ return(
     <RenderBook
     Libros={Libros}
     />
+   
     </div>
 
 
 
-</section><section id="books-most">
+</section>
+
+<section id="books-most">
 
         <h1 id="title-most" class="titulos">Libros mas vendidos</h1>
 
